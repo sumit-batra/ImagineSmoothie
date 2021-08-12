@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D7C95CCB1AC15C6EDE5AAE4 /* Pods_ImagineSmoothie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB55985D0072022F99CFB60A /* Pods_ImagineSmoothie.framework */; };
+		840AA078B9A6C19C120D50CA /* Pods_ImagineSmoothieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80709636774CA6D8948B9A44 /* Pods_ImagineSmoothieTests.framework */; };
+		9B2D76C5ED847E14BC541AFA /* Pods_ImagineSmoothie_ImagineSmoothieUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA4FC621E58D10A09A27854 /* Pods_ImagineSmoothie_ImagineSmoothieUITests.framework */; };
+		CE1553BB26C5517300C8F333 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1553BA26C5517300C8F333 /* TextCell.swift */; };
+		CE1553BD26C5696C00C8F333 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1553BC26C5696C00C8F333 /* ImageCell.swift */; };
+		CE1553BF26C578F700C8F333 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1553BE26C578F700C8F333 /* VideoCell.swift */; };
+		CE5C271926C47D4000577632 /* ImagineSmoothieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C271826C47D4000577632 /* ImagineSmoothieApp.swift */; };
+		CE5C271B26C47D4000577632 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C271A26C47D4000577632 /* ContentView.swift */; };
+		CE5C271D26C47D4100577632 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5C271C26C47D4100577632 /* Assets.xcassets */; };
+		CE5C272026C47D4100577632 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5C271F26C47D4100577632 /* Preview Assets.xcassets */; };
+		CE5C272B26C47D4200577632 /* ImagineSmoothieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C272A26C47D4200577632 /* ImagineSmoothieTests.swift */; };
+		CE5C273626C47D4200577632 /* ImagineSmoothieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C273526C47D4200577632 /* ImagineSmoothieUITests.swift */; };
+		CE5C274526C47D9700577632 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C274426C47D9700577632 /* FeedItem.swift */; };
+		CE5C274726C5188000577632 /* FeedsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C274626C5188000577632 /* FeedsViewModel.swift */; };
+		CE5C274926C51C9C00577632 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE5C274826C51C9C00577632 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE5C272726C47D4200577632 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE5C270D26C47D4000577632 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE5C271426C47D4000577632;
+			remoteInfo = ImagineSmoothie;
+		};
+		CE5C273226C47D4200577632 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE5C270D26C47D4000577632 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE5C271426C47D4000577632;
+			remoteInfo = ImagineSmoothie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FA4FC621E58D10A09A27854 /* Pods_ImagineSmoothie_ImagineSmoothieUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImagineSmoothie_ImagineSmoothieUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80709636774CA6D8948B9A44 /* Pods_ImagineSmoothieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImagineSmoothieTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83960A0818142544C35EB388 /* Pods-ImagineSmoothie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagineSmoothie.release.xcconfig"; path = "Target Support Files/Pods-ImagineSmoothie/Pods-ImagineSmoothie.release.xcconfig"; sourceTree = "<group>"; };
+		AA2185DA811B186CB665DDE5 /* Pods-ImagineSmoothie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagineSmoothie.debug.xcconfig"; path = "Target Support Files/Pods-ImagineSmoothie/Pods-ImagineSmoothie.debug.xcconfig"; sourceTree = "<group>"; };
+		CA225CAA02F89A9151AB2F05 /* Pods-ImagineSmoothie-ImagineSmoothieUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagineSmoothie-ImagineSmoothieUITests.release.xcconfig"; path = "Target Support Files/Pods-ImagineSmoothie-ImagineSmoothieUITests/Pods-ImagineSmoothie-ImagineSmoothieUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CE1553BA26C5517300C8F333 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		CE1553BC26C5696C00C8F333 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		CE1553BE26C578F700C8F333 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		CE238F6B618D60213424A1F7 /* Pods-ImagineSmoothie-ImagineSmoothieUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagineSmoothie-ImagineSmoothieUITests.debug.xcconfig"; path = "Target Support Files/Pods-ImagineSmoothie-ImagineSmoothieUITests/Pods-ImagineSmoothie-ImagineSmoothieUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE5C271526C47D4000577632 /* ImagineSmoothie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagineSmoothie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5C271826C47D4000577632 /* ImagineSmoothieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagineSmoothieApp.swift; sourceTree = "<group>"; };
+		CE5C271A26C47D4000577632 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE5C271C26C47D4100577632 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE5C271F26C47D4100577632 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE5C272126C47D4100577632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5C272626C47D4200577632 /* ImagineSmoothieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagineSmoothieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5C272A26C47D4200577632 /* ImagineSmoothieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagineSmoothieTests.swift; sourceTree = "<group>"; };
+		CE5C272C26C47D4200577632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5C273126C47D4200577632 /* ImagineSmoothieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagineSmoothieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5C273526C47D4200577632 /* ImagineSmoothieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagineSmoothieUITests.swift; sourceTree = "<group>"; };
+		CE5C273726C47D4200577632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5C274426C47D9700577632 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		CE5C274626C5188000577632 /* FeedsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewModel.swift; sourceTree = "<group>"; };
+		CE5C274826C51C9C00577632 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D3FD5AABA7F09B866050A370 /* Pods-ImagineSmoothieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagineSmoothieTests.debug.xcconfig"; path = "Target Support Files/Pods-ImagineSmoothieTests/Pods-ImagineSmoothieTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB55985D0072022F99CFB60A /* Pods_ImagineSmoothie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImagineSmoothie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F35B8E85AF1DF6DB7D5824E6 /* Pods-ImagineSmoothieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagineSmoothieTests.release.xcconfig"; path = "Target Support Files/Pods-ImagineSmoothieTests/Pods-ImagineSmoothieTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE5C271226C47D4000577632 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D7C95CCB1AC15C6EDE5AAE4 /* Pods_ImagineSmoothie.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5C272326C47D4200577632 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840AA078B9A6C19C120D50CA /* Pods_ImagineSmoothieTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5C272E26C47D4200577632 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B2D76C5ED847E14BC541AFA /* Pods_ImagineSmoothie_ImagineSmoothieUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7ABAECD708D181B214B8BCB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA2185DA811B186CB665DDE5 /* Pods-ImagineSmoothie.debug.xcconfig */,
+				83960A0818142544C35EB388 /* Pods-ImagineSmoothie.release.xcconfig */,
+				CE238F6B618D60213424A1F7 /* Pods-ImagineSmoothie-ImagineSmoothieUITests.debug.xcconfig */,
+				CA225CAA02F89A9151AB2F05 /* Pods-ImagineSmoothie-ImagineSmoothieUITests.release.xcconfig */,
+				D3FD5AABA7F09B866050A370 /* Pods-ImagineSmoothieTests.debug.xcconfig */,
+				F35B8E85AF1DF6DB7D5824E6 /* Pods-ImagineSmoothieTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A6D26DFA68E0D06AEC5CA47F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB55985D0072022F99CFB60A /* Pods_ImagineSmoothie.framework */,
+				0FA4FC621E58D10A09A27854 /* Pods_ImagineSmoothie_ImagineSmoothieUITests.framework */,
+				80709636774CA6D8948B9A44 /* Pods_ImagineSmoothieTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE5C270C26C47D4000577632 = {
+			isa = PBXGroup;
+			children = (
+				CE5C274826C51C9C00577632 /* GoogleService-Info.plist */,
+				CE5C271726C47D4000577632 /* ImagineSmoothie */,
+				CE5C272926C47D4200577632 /* ImagineSmoothieTests */,
+				CE5C273426C47D4200577632 /* ImagineSmoothieUITests */,
+				CE5C271626C47D4000577632 /* Products */,
+				7ABAECD708D181B214B8BCB1 /* Pods */,
+				A6D26DFA68E0D06AEC5CA47F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE5C271626C47D4000577632 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE5C271526C47D4000577632 /* ImagineSmoothie.app */,
+				CE5C272626C47D4200577632 /* ImagineSmoothieTests.xctest */,
+				CE5C273126C47D4200577632 /* ImagineSmoothieUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE5C271726C47D4000577632 /* ImagineSmoothie */ = {
+			isa = PBXGroup;
+			children = (
+				CE5C274326C47D7600577632 /* Models */,
+				CE5C271826C47D4000577632 /* ImagineSmoothieApp.swift */,
+				CE5C271A26C47D4000577632 /* ContentView.swift */,
+				CE1553BA26C5517300C8F333 /* TextCell.swift */,
+				CE1553BC26C5696C00C8F333 /* ImageCell.swift */,
+				CE1553BE26C578F700C8F333 /* VideoCell.swift */,
+				CE5C271C26C47D4100577632 /* Assets.xcassets */,
+				CE5C272126C47D4100577632 /* Info.plist */,
+				CE5C271E26C47D4100577632 /* Preview Content */,
+			);
+			path = ImagineSmoothie;
+			sourceTree = "<group>";
+		};
+		CE5C271E26C47D4100577632 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CE5C271F26C47D4100577632 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE5C272926C47D4200577632 /* ImagineSmoothieTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE5C272A26C47D4200577632 /* ImagineSmoothieTests.swift */,
+				CE5C272C26C47D4200577632 /* Info.plist */,
+			);
+			path = ImagineSmoothieTests;
+			sourceTree = "<group>";
+		};
+		CE5C273426C47D4200577632 /* ImagineSmoothieUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE5C273526C47D4200577632 /* ImagineSmoothieUITests.swift */,
+				CE5C273726C47D4200577632 /* Info.plist */,
+			);
+			path = ImagineSmoothieUITests;
+			sourceTree = "<group>";
+		};
+		CE5C274326C47D7600577632 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE5C274426C47D9700577632 /* FeedItem.swift */,
+				CE5C274626C5188000577632 /* FeedsViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE5C271426C47D4000577632 /* ImagineSmoothie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5C273A26C47D4200577632 /* Build configuration list for PBXNativeTarget "ImagineSmoothie" */;
+			buildPhases = (
+				5A62D7F87A706E491D66A2B0 /* [CP] Check Pods Manifest.lock */,
+				CE5C271126C47D4000577632 /* Sources */,
+				CE5C271226C47D4000577632 /* Frameworks */,
+				CE5C271326C47D4000577632 /* Resources */,
+				B9D42C3C5C7FE3F4DC3A27F2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImagineSmoothie;
+			productName = ImagineSmoothie;
+			productReference = CE5C271526C47D4000577632 /* ImagineSmoothie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE5C272526C47D4200577632 /* ImagineSmoothieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5C273D26C47D4200577632 /* Build configuration list for PBXNativeTarget "ImagineSmoothieTests" */;
+			buildPhases = (
+				622169A485E3CC12B317F411 /* [CP] Check Pods Manifest.lock */,
+				CE5C272226C47D4200577632 /* Sources */,
+				CE5C272326C47D4200577632 /* Frameworks */,
+				CE5C272426C47D4200577632 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE5C272826C47D4200577632 /* PBXTargetDependency */,
+			);
+			name = ImagineSmoothieTests;
+			productName = ImagineSmoothieTests;
+			productReference = CE5C272626C47D4200577632 /* ImagineSmoothieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE5C273026C47D4200577632 /* ImagineSmoothieUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5C274026C47D4200577632 /* Build configuration list for PBXNativeTarget "ImagineSmoothieUITests" */;
+			buildPhases = (
+				614B6A010C55881CE00F5D3D /* [CP] Check Pods Manifest.lock */,
+				CE5C272D26C47D4200577632 /* Sources */,
+				CE5C272E26C47D4200577632 /* Frameworks */,
+				CE5C272F26C47D4200577632 /* Resources */,
+				C596A2A5484FB5850A8F7EE0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE5C273326C47D4200577632 /* PBXTargetDependency */,
+			);
+			name = ImagineSmoothieUITests;
+			productName = ImagineSmoothieUITests;
+			productReference = CE5C273126C47D4200577632 /* ImagineSmoothieUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE5C270D26C47D4000577632 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					CE5C271426C47D4000577632 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					CE5C272526C47D4200577632 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = CE5C271426C47D4000577632;
+					};
+					CE5C273026C47D4200577632 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = CE5C271426C47D4000577632;
+					};
+				};
+			};
+			buildConfigurationList = CE5C271026C47D4000577632 /* Build configuration list for PBXProject "ImagineSmoothie" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE5C270C26C47D4000577632;
+			productRefGroup = CE5C271626C47D4000577632 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE5C271426C47D4000577632 /* ImagineSmoothie */,
+				CE5C272526C47D4200577632 /* ImagineSmoothieTests */,
+				CE5C273026C47D4200577632 /* ImagineSmoothieUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE5C271326C47D4000577632 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5C272026C47D4100577632 /* Preview Assets.xcassets in Resources */,
+				CE5C271D26C47D4100577632 /* Assets.xcassets in Resources */,
+				CE5C274926C51C9C00577632 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5C272426C47D4200577632 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5C272F26C47D4200577632 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A62D7F87A706E491D66A2B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImagineSmoothie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		614B6A010C55881CE00F5D3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImagineSmoothie-ImagineSmoothieUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		622169A485E3CC12B317F411 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImagineSmoothieTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9D42C3C5C7FE3F4DC3A27F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImagineSmoothie/Pods-ImagineSmoothie-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImagineSmoothie/Pods-ImagineSmoothie-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImagineSmoothie/Pods-ImagineSmoothie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C596A2A5484FB5850A8F7EE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImagineSmoothie-ImagineSmoothieUITests/Pods-ImagineSmoothie-ImagineSmoothieUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImagineSmoothie-ImagineSmoothieUITests/Pods-ImagineSmoothie-ImagineSmoothieUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImagineSmoothie-ImagineSmoothieUITests/Pods-ImagineSmoothie-ImagineSmoothieUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE5C271126C47D4000577632 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1553BB26C5517300C8F333 /* TextCell.swift in Sources */,
+				CE1553BF26C578F700C8F333 /* VideoCell.swift in Sources */,
+				CE5C271B26C47D4000577632 /* ContentView.swift in Sources */,
+				CE5C271926C47D4000577632 /* ImagineSmoothieApp.swift in Sources */,
+				CE5C274726C5188000577632 /* FeedsViewModel.swift in Sources */,
+				CE5C274526C47D9700577632 /* FeedItem.swift in Sources */,
+				CE1553BD26C5696C00C8F333 /* ImageCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5C272226C47D4200577632 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5C272B26C47D4200577632 /* ImagineSmoothieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5C272D26C47D4200577632 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5C273626C47D4200577632 /* ImagineSmoothieUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE5C272826C47D4200577632 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE5C271426C47D4000577632 /* ImagineSmoothie */;
+			targetProxy = CE5C272726C47D4200577632 /* PBXContainerItemProxy */;
+		};
+		CE5C273326C47D4200577632 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE5C271426C47D4000577632 /* ImagineSmoothie */;
+			targetProxy = CE5C273226C47D4200577632 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CE5C273826C47D4200577632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE5C273926C47D4200577632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE5C273B26C47D4200577632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA2185DA811B186CB665DDE5 /* Pods-ImagineSmoothie.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ImagineSmoothie/Preview Content\"";
+				DEVELOPMENT_TEAM = 232LB8Q9RB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ImagineSmoothie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.imagine.smoothie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE5C273C26C47D4200577632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83960A0818142544C35EB388 /* Pods-ImagineSmoothie.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ImagineSmoothie/Preview Content\"";
+				DEVELOPMENT_TEAM = 232LB8Q9RB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ImagineSmoothie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.imagine.smoothie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE5C273E26C47D4200577632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3FD5AABA7F09B866050A370 /* Pods-ImagineSmoothieTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 232LB8Q9RB;
+				INFOPLIST_FILE = ImagineSmoothieTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.imagine.smoothie.ImagineSmoothieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImagineSmoothie.app/ImagineSmoothie";
+			};
+			name = Debug;
+		};
+		CE5C273F26C47D4200577632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F35B8E85AF1DF6DB7D5824E6 /* Pods-ImagineSmoothieTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 232LB8Q9RB;
+				INFOPLIST_FILE = ImagineSmoothieTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.imagine.smoothie.ImagineSmoothieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImagineSmoothie.app/ImagineSmoothie";
+			};
+			name = Release;
+		};
+		CE5C274126C47D4200577632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE238F6B618D60213424A1F7 /* Pods-ImagineSmoothie-ImagineSmoothieUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 232LB8Q9RB;
+				INFOPLIST_FILE = ImagineSmoothieUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.imagine.smoothie.ImagineSmoothieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ImagineSmoothie;
+			};
+			name = Debug;
+		};
+		CE5C274226C47D4200577632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA225CAA02F89A9151AB2F05 /* Pods-ImagineSmoothie-ImagineSmoothieUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 232LB8Q9RB;
+				INFOPLIST_FILE = ImagineSmoothieUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.imagine.smoothie.ImagineSmoothieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ImagineSmoothie;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE5C271026C47D4000577632 /* Build configuration list for PBXProject "ImagineSmoothie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5C273826C47D4200577632 /* Debug */,
+				CE5C273926C47D4200577632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE5C273A26C47D4200577632 /* Build configuration list for PBXNativeTarget "ImagineSmoothie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5C273B26C47D4200577632 /* Debug */,
+				CE5C273C26C47D4200577632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE5C273D26C47D4200577632 /* Build configuration list for PBXNativeTarget "ImagineSmoothieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5C273E26C47D4200577632 /* Debug */,
+				CE5C273F26C47D4200577632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE5C274026C47D4200577632 /* Build configuration list for PBXNativeTarget "ImagineSmoothieUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5C274126C47D4200577632 /* Debug */,
+				CE5C274226C47D4200577632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE5C270D26C47D4000577632 /* Project object */;
+}
